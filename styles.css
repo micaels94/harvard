@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Poppins&display=swap');
+
+:root{
+    --font: 'Poppins', sans-serif;
+    --font-alternative: 'Gloria Hallelujah', cursive;
+}
+
 *{
     margin: 0; 
     padding: 0; 
     box-sizing: border-box;
 }
 
-body{
+#search-container{
     display: flex; 
     justify-content: center; 
     align-items: center;
@@ -13,19 +20,50 @@ body{
     flex-direction: column;
 }
 
+.google-name{
+    font-size: 6rem;
+    width: auto;
+    font-family: var(--font);
+}
+
 .google-search{
     display: flex; 
     flex-direction: column;
-    
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
 }
 
 #text-input{
-    width: 300px;
-    border: 2px solid #aaa;
-    border-radius: 5px;
+    width: 450px;
+    height: 35px;
+    border: 2px solid #c1c3c4;
+    border-radius: 50px;
+    
+}
+#text-input:focus,
+#text-input:hover{
+    background-color: #e9ecef;
 }
 
 #click-btn{
-    width: 100px;
+    width: 150px;
+    height: 30px;
     justify-content:center;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-family: var(--font);
+    font-size: 16px;
+}
+
+#link-container{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+}
+
+#link-container > a{
+    margin-top: 1%;
+    margin-right: 3%;
 }
